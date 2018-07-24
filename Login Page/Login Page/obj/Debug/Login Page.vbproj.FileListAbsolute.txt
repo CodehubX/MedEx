@@ -1,0 +1,15 @@
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Login Page.exe.config
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Login Page.exe
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Login Page.pdb
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Login Page.xml
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.vbprojAssemblyReference.cache
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login_Page.Form1.resources
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login_Page.Resources.resources
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.vbproj.GenerateResource.cache
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.vbproj.CoreCompileInputs.cache
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.exe
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.xml
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.pdb
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+K:\ \Medicia\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.vbproj.CopyComplete
