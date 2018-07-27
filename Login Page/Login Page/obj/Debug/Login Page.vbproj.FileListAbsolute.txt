@@ -13,3 +13,18 @@ K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.pdb
 K:\ \Medicia\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 K:\ \Medicia\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 K:\ \Medicia\Login Page\Login Page\obj\Debug\Login Page.vbproj.CopyComplete
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Login Page.exe.config
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Login Page.exe
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Login Page.pdb
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Login Page.xml
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.vbprojAssemblyReference.cache
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login_Page.Form1.resources
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login_Page.Resources.resources
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.vbproj.GenerateResource.cache
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.vbproj.CoreCompileInputs.cache
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.vbproj.CopyComplete
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.exe
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.xml
+C:\Users\AlphaPhiKappa\Documents\GitHub\MedX\Login Page\Login Page\obj\Debug\Login Page.pdb
