@@ -36,6 +36,7 @@ Partial Class Form1
         Me.BindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.BindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -50,11 +51,11 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.LightGray
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(75, 142)
+        Me.Label1.Location = New System.Drawing.Point(75, 167)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 15)
+        Me.Label1.Size = New System.Drawing.Size(67, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Username"
         '
@@ -62,11 +63,11 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.LightGray
-        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(75, 199)
+        Me.Label2.Location = New System.Drawing.Point(75, 224)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 15)
+        Me.Label2.Size = New System.Drawing.Size(62, 17)
         Me.Label2.TabIndex = 999
         Me.Label2.Text = "Password"
         '
@@ -74,11 +75,11 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.LightGray
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(78, 160)
+        Me.TextBox1.Location = New System.Drawing.Point(78, 185)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(174, 25)
+        Me.TextBox1.Size = New System.Drawing.Size(172, 25)
         Me.TextBox1.TabIndex = 2
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -86,11 +87,11 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.Color.LightGray
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(80, 217)
+        Me.TextBox2.Location = New System.Drawing.Point(80, 242)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9829)
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(172, 25)
         Me.TextBox2.TabIndex = 3
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -101,7 +102,7 @@ Partial Class Form1
         Me.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Login.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Login.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Login.Location = New System.Drawing.Point(80, 258)
+        Me.Login.Location = New System.Drawing.Point(80, 283)
         Me.Login.Name = "Login"
         Me.Login.Size = New System.Drawing.Size(83, 27)
         Me.Login.TabIndex = 4
@@ -126,8 +127,9 @@ Partial Class Form1
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.BackColor = System.Drawing.Color.LightGray
         Me.LinkLabel2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LinkLabel2.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LinkLabel2.Location = New System.Drawing.Point(113, 297)
+        Me.LinkLabel2.Location = New System.Drawing.Point(113, 322)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(109, 12)
         Me.LinkLabel2.TabIndex = 5
@@ -139,7 +141,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.LightGray
         Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.DimGray
+        Me.Label3.ForeColor = System.Drawing.Color.Gray
         Me.Label3.Location = New System.Drawing.Point(42, 399)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(197, 12)
@@ -151,22 +153,32 @@ Partial Class Form1
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.RectangleShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(333, 445)
         Me.ShapeContainer1.TabIndex = 1001
         Me.ShapeContainer1.TabStop = False
         '
+        'LineShape1
+        '
+        Me.LineShape1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LineShape1.BorderWidth = 5
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 2
+        Me.LineShape1.X2 = 327
+        Me.LineShape1.Y1 = 111
+        Me.LineShape1.Y2 = 111
+        '
         'RectangleShape1
         '
-        Me.RectangleShape1.BorderColor = System.Drawing.Color.Silver
+        Me.RectangleShape1.BorderColor = System.Drawing.Color.LightGray
         Me.RectangleShape1.Enabled = False
         Me.RectangleShape1.FillColor = System.Drawing.Color.LightGray
         Me.RectangleShape1.FillGradientColor = System.Drawing.Color.Gray
         Me.RectangleShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid
-        Me.RectangleShape1.Location = New System.Drawing.Point(21, 21)
+        Me.RectangleShape1.Location = New System.Drawing.Point(11, 11)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.RectangleShape1.Size = New System.Drawing.Size(292, 401)
+        Me.RectangleShape1.Size = New System.Drawing.Size(310, 421)
         '
         'Label4
         '
@@ -174,7 +186,7 @@ Partial Class Form1
         Me.Label4.BackColor = System.Drawing.Color.LightGray
         Me.Label4.Font = New System.Drawing.Font("Candara", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(108, 55)
+        Me.Label4.Location = New System.Drawing.Point(107, 39)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(163, 45)
         Me.Label4.TabIndex = 1003
@@ -187,7 +199,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Location = New System.Drawing.Point(169, 258)
+        Me.Button1.Location = New System.Drawing.Point(169, 283)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(83, 27)
         Me.Button1.TabIndex = 1004
@@ -199,7 +211,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(66, 55)
+        Me.PictureBox1.Location = New System.Drawing.Point(65, 39)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(42, 43)
         Me.PictureBox1.TabIndex = 1005
@@ -256,4 +268,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LineShape1 As PowerPacks.LineShape
 End Class
