@@ -1,10 +1,12 @@
 ﻿Imports System.Data.OleDb
 Public Class Form1
+
+
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Login.Click
+    Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Login.Click
 
         Dim myconnection As OleDbConnection = New OleDbConnection
         myconnection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\LoginDB.accdb"
@@ -26,5 +28,28 @@ Public Class Form1
         Form2.Show()
     End Sub
 
+    Private Sub TextBox1_LostFocus(sender As Object, e As EventArgs) Handles TextBox1.LostFocus
+
+        TextBox1.Text = "username"
+    End Sub
+    Private Sub TextBox1_GotFocus(sender As Object, e As EventArgs) Handles TextBox1.GotFocus
+
+        TextBox1.Text = ""
+    End Sub
+
+    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
+        TextBox2.Text = "Password"
+
+    End Sub
+
+
+    Private Sub TextBox2_GotFocus(sender As Object, e As EventArgs) Handles TextBox2.GotFocus
+        TextBox2.Text = ""
+        TextBox2.PasswordChar = "•"
+    End Sub
+
+    Private Sub Form1_GotFocus(sender As Object, e As EventArgs) Handles MyBase.GotFocus
+
+    End Sub
 End Class
 

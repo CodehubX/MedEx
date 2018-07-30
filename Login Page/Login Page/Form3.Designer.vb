@@ -28,6 +28,7 @@ Partial Class Form3
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class Form3
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,6 +104,18 @@ Partial Class Form3
         Me.ShapeContainer1.Size = New System.Drawing.Size(333, 445)
         Me.ShapeContainer1.TabIndex = 1017
         Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape2
+        '
+        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
+        Me.LineShape2.BorderWidth = 3
+        Me.LineShape2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 103
+        Me.LineShape2.X2 = 257
+        Me.LineShape2.Y1 = 343
+        Me.LineShape2.Y2 = 343
         '
         'LineShape3
         '
@@ -193,7 +205,7 @@ Partial Class Form3
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(48, 143)
+        Me.PictureBox2.Location = New System.Drawing.Point(48, 144)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(46, 47)
         Me.PictureBox2.TabIndex = 1019
@@ -203,7 +215,7 @@ Partial Class Form3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(45, 215)
+        Me.PictureBox3.Location = New System.Drawing.Point(45, 217)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(49, 51)
         Me.PictureBox3.TabIndex = 1019
@@ -217,7 +229,7 @@ Partial Class Form3
         Me.Button1.Location = New System.Drawing.Point(126, 390)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(180, 30)
-        Me.Button1.TabIndex = 1020
+        Me.Button1.TabIndex = 6
         Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -229,7 +241,7 @@ Partial Class Form3
         Me.Button2.Location = New System.Drawing.Point(22, 390)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(98, 30)
-        Me.Button2.TabIndex = 1021
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "Login"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -252,20 +264,8 @@ Partial Class Form3
         Me.TextBox4.Location = New System.Drawing.Point(101, 321)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(155, 18)
-        Me.TextBox4.TabIndex = 3
+        Me.TextBox4.TabIndex = 4
         Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'LineShape2
-        '
-        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.LineShape2.BorderWidth = 3
-        Me.LineShape2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 103
-        Me.LineShape2.X2 = 257
-        Me.LineShape2.Y1 = 343
-        Me.LineShape2.Y2 = 343
         '
         'ComboBox1
         '
@@ -278,7 +278,7 @@ Partial Class Form3
         Me.ComboBox1.Location = New System.Drawing.Point(103, 292)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(155, 25)
-        Me.ComboBox1.TabIndex = 1023
+        Me.ComboBox1.TabIndex = 3
         '
         'Form3
         '

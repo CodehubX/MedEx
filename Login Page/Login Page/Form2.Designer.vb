@@ -38,7 +38,6 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -46,6 +45,7 @@ Partial Class Form2
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         CType(Me.LoginDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,18 +184,6 @@ Partial Class Form2
         Me.Label5.TabIndex = 1009
         Me.Label5.Text = "Age"
         '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.BackColor = System.Drawing.Color.LightGray
-        Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(51, 295)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(52, 25)
-        Me.MaskedTextBox1.TabIndex = 4
-        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.LightGray
@@ -273,7 +261,7 @@ Partial Class Form2
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.LightGray
-        Me.CheckBox1.Location = New System.Drawing.Point(20, 342)
+        Me.CheckBox1.Location = New System.Drawing.Point(19, 345)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(302, 30)
         Me.CheckBox1.TabIndex = 1015
@@ -281,12 +269,20 @@ Partial Class Form2
     "by the practitioner for medical purposes"
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(50, 300)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(59, 20)
+        Me.DateTimePicker1.TabIndex = 1016
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(333, 445)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -294,7 +290,6 @@ Partial Class Form2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.MaskedTextBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
@@ -331,7 +326,6 @@ Partial Class Form2
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents LineShape1 As PowerPacks.LineShape
@@ -340,4 +334,5 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
