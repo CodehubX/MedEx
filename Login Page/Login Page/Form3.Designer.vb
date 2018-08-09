@@ -303,7 +303,7 @@ Partial Class Form3
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form3"
-        Me.Opacity = 0.9R
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

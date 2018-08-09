@@ -56,11 +56,10 @@ Partial Class Form1
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(82, 185)
+        Me.TextBox1.Location = New System.Drawing.Point(115, 191)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(172, 25)
+        Me.TextBox1.Size = New System.Drawing.Size(139, 25)
         Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "Username"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
@@ -69,11 +68,10 @@ Partial Class Form1
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(82, 242)
+        Me.TextBox2.Location = New System.Drawing.Point(115, 240)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(172, 25)
+        Me.TextBox2.Size = New System.Drawing.Size(139, 25)
         Me.TextBox2.TabIndex = 3
-        Me.TextBox2.Text = "Password"
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Login
@@ -201,7 +199,7 @@ Partial Class Form1
         Me.PictureBox3.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(49, 239)
+        Me.PictureBox3.Location = New System.Drawing.Point(82, 237)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox3.TabIndex = 1020
@@ -212,7 +210,7 @@ Partial Class Form1
         Me.PictureBox2.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(49, 182)
+        Me.PictureBox2.Location = New System.Drawing.Point(82, 188)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox2.TabIndex = 1021
@@ -254,7 +252,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Opacity = 0.9R
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))

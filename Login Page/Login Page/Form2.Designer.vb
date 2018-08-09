@@ -45,7 +45,7 @@ Partial Class Form2
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         CType(Me.LoginDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -269,12 +269,12 @@ Partial Class Form2
     "by the practitioner for medical purposes"
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
-        'DateTimePicker1
+        'TextBox4
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(50, 300)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(59, 20)
-        Me.DateTimePicker1.TabIndex = 1016
+        Me.TextBox4.Location = New System.Drawing.Point(41, 300)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(56, 20)
+        Me.TextBox4.TabIndex = 1016
         '
         'Form2
         '
@@ -282,7 +282,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(333, 445)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -302,7 +302,7 @@ Partial Class Form2
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
-        Me.Opacity = 0.9R
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.LoginDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -334,5 +334,5 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents TextBox4 As TextBox
 End Class

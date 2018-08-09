@@ -15,8 +15,8 @@ Public Class Form1
         Dim dr As OleDbDataReader = cmd.ExecuteReader
         If (dr.Read = True) Then
             Me.Hide()
-
             MsgBox("Logged in Successfully")
+            Form4.Show()
         Else
             MsgBox("Username Or Password Incorrect")
 
@@ -30,26 +30,17 @@ Public Class Form1
 
     Private Sub TextBox1_LostFocus(sender As Object, e As EventArgs) Handles TextBox1.LostFocus
 
-        TextBox1.Text = "username"
+
     End Sub
     Private Sub TextBox1_GotFocus(sender As Object, e As EventArgs) Handles TextBox1.GotFocus
 
         TextBox1.Text = ""
     End Sub
 
-    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
-        TextBox2.Text = "Password"
-
-    End Sub
-
 
     Private Sub TextBox2_GotFocus(sender As Object, e As EventArgs) Handles TextBox2.GotFocus
         TextBox2.Text = ""
         TextBox2.PasswordChar = "•"
-    End Sub
-
-    Private Sub Form1_GotFocus(sender As Object, e As EventArgs) Handles MyBase.GotFocus
-
     End Sub
 End Class
 

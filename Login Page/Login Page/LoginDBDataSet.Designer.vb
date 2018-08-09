@@ -455,7 +455,7 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddLoginTableRow(ByVal Username As String, ByVal Password As String, ByVal Answer As String, ByVal Name1 As String, ByVal Name2 As String, ByVal Address As String, ByVal Number As Integer, ByVal Age As Date, ByVal Sex As String) As LoginTableRow
+        Public Overloads Function AddLoginTableRow(ByVal Username As Char, ByVal Password As Char, ByVal Answer As Char, ByVal Name1 As Char, ByVal Name2 As Char, ByVal Address As Char, ByVal Number As Integer, ByVal Age As Date, ByVal Sex As Char) As LoginTableRow
             Dim rowLoginTableRow As LoginTableRow = CType(Me.NewRow,LoginTableRow)
             Dim columnValuesArray() As Object = New Object() {Nothing, Username, Password, Answer, Name1, Name2, Address, Number, Age, Sex}
             rowLoginTableRow.ItemArray = columnValuesArray
@@ -503,23 +503,23 @@ Partial Public Class LoginDBDataSet
         Private Sub InitClass()
             Me.columnPID = New Global.System.Data.DataColumn("PID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPID)
-            Me.columnUsername = New Global.System.Data.DataColumn("Username", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnUsername = New Global.System.Data.DataColumn("Username", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnUsername)
-            Me.columnPassword = New Global.System.Data.DataColumn("Password", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnPassword = New Global.System.Data.DataColumn("Password", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPassword)
-            Me.columnAnswer = New Global.System.Data.DataColumn("Answer", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnAnswer = New Global.System.Data.DataColumn("Answer", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAnswer)
-            Me.columnName1 = New Global.System.Data.DataColumn("Name1", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnName1 = New Global.System.Data.DataColumn("Name1", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnName1)
-            Me.columnName2 = New Global.System.Data.DataColumn("Name2", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnName2 = New Global.System.Data.DataColumn("Name2", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnName2)
-            Me.columnAddress = New Global.System.Data.DataColumn("Address", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnAddress = New Global.System.Data.DataColumn("Address", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAddress)
             Me.columnNumber = New Global.System.Data.DataColumn("Number", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnNumber)
             Me.columnAge = New Global.System.Data.DataColumn("Age", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnAge)
-            Me.columnSex = New Global.System.Data.DataColumn("Sex", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnSex = New Global.System.Data.DataColumn("Sex", GetType(Char), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnSex)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnPID}, true))
             Me.columnPID.AutoIncrement = true
@@ -527,13 +527,6 @@ Partial Public Class LoginDBDataSet
             Me.columnPID.AutoIncrementStep = -1
             Me.columnPID.AllowDBNull = false
             Me.columnPID.Unique = true
-            Me.columnUsername.MaxLength = 255
-            Me.columnPassword.MaxLength = 255
-            Me.columnAnswer.MaxLength = 255
-            Me.columnName1.MaxLength = 255
-            Me.columnName2.MaxLength = 255
-            Me.columnAddress.MaxLength = 536870910
-            Me.columnSex.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -691,10 +684,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Username() As String
+        Public Property Username() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.UsernameColumn),String)
+                    Return CType(Me(Me.tableLoginTable.UsernameColumn),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Username' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -706,10 +699,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Password() As String
+        Public Property Password() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.PasswordColumn),String)
+                    Return CType(Me(Me.tableLoginTable.PasswordColumn),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Password' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -721,10 +714,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Answer() As String
+        Public Property Answer() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.AnswerColumn),String)
+                    Return CType(Me(Me.tableLoginTable.AnswerColumn),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Answer' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -736,10 +729,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Name1() As String
+        Public Property Name1() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.Name1Column),String)
+                    Return CType(Me(Me.tableLoginTable.Name1Column),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Name1' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -751,10 +744,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Name2() As String
+        Public Property Name2() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.Name2Column),String)
+                    Return CType(Me(Me.tableLoginTable.Name2Column),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Name2' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -766,10 +759,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Address() As String
+        Public Property Address() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.AddressColumn),String)
+                    Return CType(Me(Me.tableLoginTable.AddressColumn),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Address' in table 'LoginTable' is DBNull.", e)
                 End Try
@@ -811,10 +804,10 @@ Partial Public Class LoginDBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Sex() As String
+        Public Property Sex() As Char
             Get
                 Try 
-                    Return CType(Me(Me.tableLoginTable.SexColumn),String)
+                    Return CType(Me(Me.tableLoginTable.SexColumn),Char)
                 Catch e As Global.System.InvalidCastException
                     Throw New Global.System.Data.StrongTypingException("The value for column 'Sex' in table 'LoginTable' is DBNull.", e)
                 End Try
